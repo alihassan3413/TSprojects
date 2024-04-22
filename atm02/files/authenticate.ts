@@ -59,6 +59,7 @@ export async function login() {
     ]);
 
     user.balance += balancein.balance;
+    // user.balance = 0;
     await atm(user.balance);
     return user;
   } else {
@@ -74,7 +75,7 @@ async function main() {
       {
         type: "number",
         name: "choice",
-        message: "Enter 1 or 2 : ",
+        message: "Enter 1 for signup or 2 for login : ",
       },
     ]);
 

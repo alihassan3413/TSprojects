@@ -44,10 +44,11 @@ export async function login() {
             {
                 type: "number",
                 name: "balance",
-                message: "Enter the amount of balance : ",
+                message: "Enter the amount of balance you want to deposit : ",
             },
         ]);
         user.balance += balancein.balance;
+        // user.balance = 0;
         await atm(user.balance);
         return user;
     }
@@ -63,7 +64,7 @@ async function main() {
             {
                 type: "number",
                 name: "choice",
-                message: "Enter 1 or 2 : ",
+                message: "Enter 1 for signup or 2 for login : ",
             },
         ]);
         switch (ans.choice) {

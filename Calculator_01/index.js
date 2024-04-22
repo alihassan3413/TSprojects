@@ -94,7 +94,10 @@ while (true) {
             message: "Do you want to continue? press y otherwise n: ",
         },
     ]);
-    if (startAgain.repeat == "y" || startAgain.repeat == "Y") {
+    if (startAgain.repeat == "y" ||
+        startAgain.repeat == "Y" ||
+        startAgain.repeat == "yes" ||
+        startAgain.repeat == "YES") {
         continue;
     }
     else {
